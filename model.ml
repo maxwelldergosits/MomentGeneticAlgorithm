@@ -25,7 +25,7 @@ type force = Uniform | Center | End
     let ixy = fun a -> (List.fold_left ( +. ) 0.0 (xy_moment a)) /. 12.
 
 
-let fitness a = ((iy a)) /. (area a)
+let fitness a = ((ix a)) /. (area a)
 
 let population = ref None
 
